@@ -3,6 +3,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* For both pages */
+
 header {
     display: block;
     background-color: rgb(3, 163, 223);
@@ -31,45 +33,98 @@ main {
     margin-right: 2%;
 }
 
+footer {
+    color: white;
+    padding: 2rem;
+    margin-top: 5%;
+    background-image: url(https://github.com/UWFront-End-Cert/html100/blob/master/lesson07-styleguide/styleguide%20design%20elements/footerImage.jpg?raw=true)
+}
+
+/* Home page */
+
 .item2 {
     grid-column-start: 1;
     grid-column-end: 4;
+    text-align: center;
+    border: 3px rgb(236, 183, 34) solid;
 }
 
 .item3 {
     grid-column-start: 4;
     grid-column-end: 4;
-    align-items: center;
+    text-align: center;
 }
 
 .item4 {
     grid-column: 2 / 4;
 }
 
+h2 {
+    color: rgb(3, 163, 223);
+}
+
+.instructor-header {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration:double;
+}
+
 .instructors {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
-    align-content: space-around;
-    justify-content: center;
-    margin: auto;
-    padding: 2%;
+    margin: 10%;
+    margin-top: 0;
+    margin-bottom: 5%;
     background-color: rgb(27, 68, 127);
     color: rgb(236, 183, 34);
 }
 
-h3 {
+.instructors h3 {
     font-size: 30px;
 }
 
 .derek {
-    width: 33%;
+    width: 90%;
 }
 
 .amy {
-    width: 33%;
+    width: 90%;
 }
 
 .nathan {
-    width: 33%;
+    width: 90%;
+}
+
+.item6 {
+    text-align: center;
+}
+
+/* Services page */
+
+.classes {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.classes h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.class-info {
+    border: 3px rgb(236, 183, 34) solid;
+    padding: 2%;
+    margin: 1rem;
+}
+
+.lessons {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.photos {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    float: inline-end;
 }

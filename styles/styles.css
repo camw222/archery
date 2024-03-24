@@ -26,7 +26,7 @@ header a:visited {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     margin-top: 5%;
     margin-left: 2%;
@@ -47,6 +47,8 @@ footer {
     grid-column-end: 4;
     text-align: center;
     border: 3px rgb(236, 183, 34) solid;
+    padding: 2%;
+    margin: 1rem;
 }
 
 .item3 {
@@ -57,6 +59,7 @@ footer {
 
 .item4 {
     grid-column: 2 / 4;
+    text-align: center;
 }
 
 h2 {
@@ -64,36 +67,27 @@ h2 {
 }
 
 .instructor-header {
-    font-size: 2rem;
+    font-size: 45px;
     text-align: center;
-    text-decoration:double;
 }
 
 .instructors {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin: 10%;
-    margin-top: 0;
-    margin-bottom: 5%;
-    background-color: rgb(27, 68, 127);
-    color: rgb(236, 183, 34);
 }
 
 .instructors h3 {
     font-size: 30px;
 }
 
-.derek {
+.teacher {
     width: 90%;
-}
-
-.amy {
-    width: 90%;
-}
-
-.nathan {
-    width: 90%;
+    background-color: rgb(27, 68, 127);
+    color: rgb(236, 183, 34);
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 0;
 }
 
 .item6 {
@@ -120,11 +114,14 @@ h2 {
 
 .lessons {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
+    border: 3px rgb(236, 183, 34) solid;
+    padding: 2%;
+    margin: 1rem;
 }
 
 .photos {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
     float: inline-end;
 }

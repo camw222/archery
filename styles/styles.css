@@ -3,11 +3,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+}
+.hidden:focus {
+    left: 0;
+}
+
+a:hover {
+    font-size: 150%;
+}
+
 /* For both pages */
 
 header {
     display: block;
-    background-color: rgb(3, 163, 223);
+    background-color: rgb(22,118,192);
     color: white;
     padding: 2.5rem;
 }
@@ -15,13 +28,20 @@ header {
 header a {
     color: white;
     font-weight: bold;
+    padding: .5rem;
+    margin: .5rem;
 }
+
 header a:visited {
     color: rgb(236, 183, 34);
 }
 
 .item1 {
     float: right;
+}
+
+nav h1 {
+    text-align: right;
 }
 
 main {
@@ -63,7 +83,7 @@ footer {
 }
 
 h2 {
-    color: rgb(3, 163, 223);
+    color: rgb(22,118,192);
 }
 
 .instructor-header {
